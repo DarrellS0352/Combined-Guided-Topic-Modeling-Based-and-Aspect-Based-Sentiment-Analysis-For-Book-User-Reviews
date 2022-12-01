@@ -65,7 +65,7 @@ abc
 + Guided topic modeling for seed keywords using BERTopic
 + https://maartengr.github.io/BERTopic/getting_started/hierarchicaltopics/hierarchicaltopics.html#tf-idf
 + Sentence Transformer embedding model to create numerical representations of sentences
-+ https://www.sbert.net/docs/pretrained_models.html
++ https://huggingface.co/sentence-transformers
 + Sentence Transformer model all-MiniLM-L6-v2 comes recommended with good out-of-the-box performance
 ## Sentiment Analysis
 + Pre-trained siebert/sentiment-roberta-large-english sentiment model
