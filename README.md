@@ -17,6 +17,7 @@ abc
   + Emoticons
   + Excess white space
   + Force lowercase
+  + Split reviews into individual sentences
 + Cleaned using Python libraries:
   + SpaCy
   + re
