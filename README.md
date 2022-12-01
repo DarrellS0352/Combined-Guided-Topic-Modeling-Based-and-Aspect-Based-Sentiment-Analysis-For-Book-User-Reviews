@@ -62,6 +62,7 @@ abc
 + Ended up with matched lists of nouns and their descriptive words
 ## Neural Topic Modeling
 + Guided topic modeling using seed keywords
++ Sentence Transformer embedding model to create numerical representations of sentences
 + Sentence Transformer model all-MiniLM-L6-v2 comes recommended with good out-of-the-box performance
 ## Sentiment Analysis
 + Pre-trained siebert/sentiment-roberta-large-english sentiment model
