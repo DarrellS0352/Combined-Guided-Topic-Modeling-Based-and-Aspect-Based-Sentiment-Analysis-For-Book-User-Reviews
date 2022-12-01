@@ -49,7 +49,7 @@ abc
   + Author 
 + POS Patterns
   + Adjective > noun(s)
-  + Adverb > adverb > noun(s) 
+  + Adverb > adverb > noun(s)
   + Adverb > adjective > noun(s)
   + Adverb > verb > noun(s)
   + Verb > noun(s)
