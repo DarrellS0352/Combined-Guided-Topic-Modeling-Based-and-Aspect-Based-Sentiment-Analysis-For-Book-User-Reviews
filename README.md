@@ -16,6 +16,7 @@ abc
   + Expanded contractions (they're > they are)
   + Emoticons
   + Excess white space
+  + Force lowercase
 + Cleaned using Python libraries:
   + SpaCy
   + re
