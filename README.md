@@ -2,8 +2,11 @@
 
 ## Objective
 abc
-
++ The purpose of this project is to give additional insights about recommended books to a user utilizing topic modeling, aspect extraction, and sentiment analysis
 + Link to previous project
++ Most product recommenders give their recommendations and some even let you see user reviews
++ However, determining if you'll really like the product with these data points is unfeasible
++ You could read through thousands of user reviews 
 ## The Data
 abc
 + Original data description
