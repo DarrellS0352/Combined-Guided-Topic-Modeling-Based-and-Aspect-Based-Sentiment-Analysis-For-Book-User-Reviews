@@ -27,10 +27,37 @@ abc
 ## Aspect Extraction
 abc
 + Seed keywords
+  + Setting
+  + Character
+  + Plot
+  + Conflict
+  + Theme
+  + Point-of-view
+  + Tone
+  + Style
+  + Dialogue
+  + Action
+  + Description
+  + Exposition
+  + Motivation
+  + Symbolism
+  + Climax
+  + Resolution
+  + Imagery
+  + Pacing
+  + Writing
+  + Author 
 + POS Patterns
+  + Adjective > noun(s)
+  + Adverb > adverb > noun(s) 
+  + Adverb > adjective > noun(s)
+  + Adverb > verb > noun(s)
+  + Verb > noun(s)
 + KeyphraseCountVectorizer
+  + KeyphraseVectorizer is an enhanced version of the CountVectorizer which is designed to find key phrases using part-of-speech patterns
   + Stopwords
 + KeyBERT model
+  + KeyBERT utilizes BERT embeddings to produce keywords/phrases that best represent a document
   + distilbert-base-nli-mean-tokens
 + Ended up with matched lists of nouns and their descriptive words
 ## Neural Topic Modeling
