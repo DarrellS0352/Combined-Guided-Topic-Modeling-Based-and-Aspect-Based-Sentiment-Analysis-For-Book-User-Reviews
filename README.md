@@ -54,7 +54,7 @@ abc
   + Adverb > verb > noun(s)
   + Verb > noun(s)
 + KeyphraseCountVectorizer
-  + KeyphraseVectorizer is an enhanced version of the CountVectorizer which is designed to find key phrases using part-of-speech patterns
+  + KeyphraseCountVectorizer is an enhanced version of the CountVectorizer which is designed to find key phrases using part-of-speech patterns
   + Stopwords
 + KeyBERT model
   + KeyBERT utilizes BERT embeddings to produce keywords/phrases that best represent a document
