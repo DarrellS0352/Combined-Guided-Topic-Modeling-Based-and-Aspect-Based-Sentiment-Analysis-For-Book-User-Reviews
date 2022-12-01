@@ -26,7 +26,7 @@ abc
 + Seed keywords
 + POS Patterns
 + KeyphraseCountVectorizer
-+ KeyBert model
++ KeyBERT model
 + Ended up with matched lists of nouns and their descriptive words
 ## Neural Topic Modeling
 + 
