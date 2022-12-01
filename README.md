@@ -1,4 +1,4 @@
-# Combined Neural Topic Modeling-Based and Aspect-Based Sentiment Analysis For Book User Reviews
+# Combined Guided Topic Modeling-Based and Aspect-Based Sentiment Analysis For Book User Reviews
 
 ## Objective
 abc
@@ -61,7 +61,7 @@ abc
   + https://maartengr.github.io/KeyBERT/index.html
   + distilbert-base-nli-mean-tokens
 + Ended up with matched lists of nouns and their descriptive words
-## Neural Topic Modeling
+## Guided Topic Modeling
 + Guided topic modeling for seed keywords using BERTopic
 + https://maartengr.github.io/BERTopic/getting_started/hierarchicaltopics/hierarchicaltopics.html#tf-idf
 + Sentence Transformer embedding model to create numerical representations of sentences
@@ -85,7 +85,7 @@ abc
   + X-axis represents the number of times the aspect was mentioned by reviewers
 + The elements of writing and books provided by the seed keywords give decent metrics that can be observed for most books
 + This plot can inform a potentional consumer regarding meta-information on how others liked the writing/author and also gives an idea of the weight of those sentiments (bar length/color saturation)
-### Neural Topic Modeling-Based Sentiment Analysis
+### Guided Topic Modeling-Based Sentiment Analysis
 + Provides meta and content focused sentiments
   + Possible to have topics similar to previously shown aspects but also produced content-based topics
   + For example:
