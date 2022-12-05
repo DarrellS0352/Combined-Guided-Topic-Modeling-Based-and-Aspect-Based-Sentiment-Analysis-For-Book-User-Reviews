@@ -34,7 +34,7 @@ Aspect extraction was done using KeyBERT and some custom wrangling methods. [Key
 + Imagery
 + Pacing
 + Writing
-+ Author 
++ Author
 + POS Patterns
   + Adjective > noun(s)
   + Adverb > adjective > noun(s)
