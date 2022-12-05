@@ -16,6 +16,7 @@ The raw review texts were pre-processed with the following methods:
 ## Aspect Extraction
 Aspect extraction was done using KeyBERT and some custom wrangling methods. [KeyBERT](https://maartengr.github.io/KeyBERT/index.html) utilizes BERT embeddings to produce keywords/phrases that best represent a document. It is used in combination with KeyphraseCountVectorizer which is an enhanced version of the CountVectorizer and is designed to find key phrases using part-of-speech patterns and also takes care of stopwords. The part-of-speech patterns used are variants from the work of Banjar et al. (2020). It parses syntactic dependencies pulling out phrases such as adjective > noun or verb > noun. The model is fed a list of seed keywords which guide the model (if possible) towards phrases related to said list. The seed keywords are various words related to aspects of writing and books. The words used are setting, character, plot, conflict, theme, point-of-view, tone, style, dialogue, action, description, exposition, motivation, symbolism, climax, resolution, imagery, pacing, writing, and author. The output is matched lists of nouns and their descriptive words
 ## Guided Topic Modeling
+The topic modeling is done with [BERTopic](https://maartengr.github.io/BERTopic/index.html).
 + Guided topic modeling for seed keywords using BERTopic
 + https://maartengr.github.io/BERTopic/getting_started/hierarchicaltopics/hierarchicaltopics.html#tf-idf
 + Sentence Transformer embedding model to create numerical representations of sentences
