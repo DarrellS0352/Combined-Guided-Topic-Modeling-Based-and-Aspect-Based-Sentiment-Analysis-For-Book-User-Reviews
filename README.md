@@ -18,8 +18,8 @@ Aspect extraction was done using KeyBERT and some custom wrangling methods. [Key
 ## Guided Topic Modeling
 A [sentence transformer embedding model](https://huggingface.co/sentence-transformers) is used to create numerical representations of the cleaned sentences. The sentence embeddings are then given to the topic model. The topic modeling is done with [BERTopic](https://maartengr.github.io/BERTopic/index.html). The guided topic modeling functionality is utilized by also feeding the list of seed keywords to this model. This determines the high-level topics written about in the reviews using transformers and class-based term frequency inverse document frequency (TF-IDF) to create dense topic clusters. Each topic produced consists of the top four keywords of the topic concatenated with underscores (ex: windows_drive_dos_file). The topics are assigned a topic number with -1 being outliers that don't fit with others well enough.
 ## Sentiment Analysis
-+ Pre-trained siebert/sentiment-roberta-large-english sentiment model
-  + https://huggingface.co/siebert/sentiment-roberta-large-english?text=I+like+you.+I+love+you
+The pre-trained sentiment classification model used was the [siebert/sentiment-roberta-large-english sentiment model](https://huggingface.co/siebert/sentiment-roberta-large-english?text=I+like+you.+I+love+you). 
+ 
 ### Aspect-Based Sentiment Analysis
 + Produces sentiments of aspects that may be buried within a sentence
 + Most sentiment analyses produce a macro-level sentiment for a single word, sentence, paragraph, document, etc.
