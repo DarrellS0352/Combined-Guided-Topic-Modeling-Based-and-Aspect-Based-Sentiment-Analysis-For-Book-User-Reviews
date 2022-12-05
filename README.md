@@ -21,20 +21,9 @@ A [sentence transformer embedding model](https://huggingface.co/sentence-transfo
 The pre-trained sentiment classification model used was the [siebert/sentiment-roberta-large-english sentiment model](https://huggingface.co/siebert/sentiment-roberta-large-english?text=I+like+you.+I+love+you). The sentiment model was applied to the key phrase for aspect-based sentiment analysis. For the topic modeling-based sentiment analysis it was applied to the cleaned sentence which is represented by the assigned topic.
  
 ### Aspect-Based Sentiment Analysis
-+ Produces sentiments of aspects that may be buried within a sentence
-+ Most sentiment analyses produce a macro-level sentiment for a single word, sentence, paragraph, document, etc.
-+ Allows you to determine sentiment for specific nouns within sentences
-+ In this case, it is for the elements of writing and books from the seed keyword list
-+ Sentiment scores are 0-1 with POSITIVE OR NEGATIVE tags
-+ Reversed polarity for NEGATIVE tags (*= -1)
-+ Lemmatized the nouns
-+ Filtered to aspects from the seed keyword list
-+ Aggregated mean sentiment score and count of aspect mentions in reviews
-+ Final product is plot
-  + Color indicates mean sentiment (-1/red most negative, 1/blue most positive)
-  + X-axis represents the number of times the aspect was mentioned by reviewers
-+ The elements of writing and books provided by the seed keywords give decent metrics that can be observed for most books
-+ This plot can inform a potentional consumer regarding meta-information on how others liked the writing/author and also gives an idea of the weight of those sentiments (bar length/color saturation)
+Aspect-based sentiment analysis extracts aspects (nouns) and their descriptors (adjectives, verbs, etc.) and applies sentiments to the extracted words at a sub-sentence level. Most sentiment analyses produce a macro-level sentiment for a single word, sentence, paragraph, document, etc. In this case, it is the sentiments in book reviews for the elements of writing and books from the seed keyword list.
+
+The sentiment model gives 0-1 scores with POSITIVE or NEGATIVE labels. The scores with NEGATIVE labels are then reversed in polarity and the nouns are lemmatized. Given the output includes every noun that met the part-of-speech patterns, the output is filtered to just the words from the seed keyword list. Then the output is aggregated to determine the mean sentiment score and count of mentions for each word. The final product is a bar graph with the color indicating the mean sentiment and the x-axis portraying the aspect counts. The elements of writing and books provided by the seed keywords give decent metrics that can be used to evaluate most books. This plot can inform a potentional consumer regarding meta-information on how others liked the writing/author and also gives an idea of the weight of those sentiments (bar length/color saturation).
 ### Guided Topic Modeling-Based Sentiment Analysis
 + Provides meta and content focused sentiments
   + Possible to have topics similar to previously shown aspects but also produced content-based topics
