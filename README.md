@@ -44,8 +44,18 @@ The pre-trained sentiment classification model used was the [siebert/sentiment-r
 Aspect-based sentiment analysis extracts aspects (nouns) and their descriptors (adjectives, verbs, etc.) and applies sentiments to the extracted words at a sub-sentence level. Most sentiment analyses produce a macro-level sentiment for a single word, sentence, paragraph, document, etc. In this case, it is the sentiments in book reviews for the elements of writing and books from the seed keyword list.
 
 The sentiment model gives 0-1 scores with POSITIVE or NEGATIVE labels. The scores with NEGATIVE labels are then reversed in polarity and the nouns are lemmatized. Given the output includes every noun that met the part-of-speech patterns, the output is filtered to just the words from the seed keyword list. Then the output is aggregated to determine the mean sentiment score and count of mentions for each word. The final product is a bar graph with the color indicating the mean sentiment and the x-axis portraying the aspect counts. The elements of writing and books provided by the seed keywords give decent metrics that can be used to evaluate most books. This plot can inform a potentional consumer regarding meta-information on how others liked the writing/author and also gives an idea of the weight of those sentiments (bar length/color saturation).
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/aspect%20sentiment%20plot.PNG" width=35% height=35%>
+ </p>
+
 ### Guided Topic Modeling-Based Sentiment Analysis
 The guided topic modeling-based sentiment analysis provides meta and content focused sentiments extracted from the book reviews. It is possible the model finds topics that are similar to the seed keyword aspects but it also produces book content-based topics. For example, the topic 'scifi_recommend_asimove_readable' gives the impression the book is comparable to Isaac Asimov novels. While the topic 'holden_miller_detective_idealistic' is describing two primary characters and someone unfamiliar with the story may not completely understand. The same wrangling techniques were applied except the original cleaned sentences were fed through the sentiment model which is acceptable because the sentences are represented by assigned topic. The final product is also a bar graph reprsenting the mean sentiment of the topic and the x-axis portrays the topic counts.
+
+<p align="center">
+<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/topic%20sentiment%20plot.PNG" width=35% height=35%>
+ </p>
+
 ## References
 Banjar, A., Ahmed, Z., Daud, A., Abbasi R.A., Dawood, H. (2020). Aspect-Based Sentiment Analysis for Polarity Estimation of Customer Reviews on Twitter. Computers, Materials & Continua 2021, 67(2), 2203-2225. https://doi.org/10.32604/cmc.2021.014226 
 
