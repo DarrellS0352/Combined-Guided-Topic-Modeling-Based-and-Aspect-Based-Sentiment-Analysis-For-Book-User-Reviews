@@ -5,57 +5,42 @@ The purpose of this project is to give additional insights about recommended boo
 ## The Data
 The data used is Amazon product review data gathered by Ni et al. (2019). There is raw review data, ratings only data, data subsets for products that have at least five reviews, and per-category data available for each product category. The raw data has book metadata (2,935,525 books) and the book review data (51,311,621 reviews). The two datasets are joined on the book ID to add book titles to the reviews. To meet computing constraints, the data is then filtered to the top 10 genres with the most unique books and books that have 50 or more reviews. The final dataset is approximately 13 million reviews for 64,000 books and 5.3 million users. For development and presentation considerations, the data was filtered to a single book with 1,539 reviews.
 ### Data Pre-processing
-abc
-+ Cleaned:
-  + Unicode
-  + HTML
-  + URL
-  + Expanded contractions (they're > they are)
-  + Emoticons
-  + Excess white space
-  + Force lowercase
-  + Split reviews into individual sentences
-+ Cleaned using Python libraries:
-  + SpaCy
-  + re
-  + contractions
-  + bs4
-  + unicode
+The raw review texts were pre-processed with the following methods:
++ Unicode removal
++ HTML removal
++ URL removal
++ Emoticon removal
++ Expanded contractions (they're > they are)
++ Forced lowercase
++ Split reviews into individual sentences
 ## Aspect Extraction
-abc
-+ Seed keywords
-  + Setting
-  + Character
-  + Plot
-  + Conflict
-  + Theme
-  + Point-of-view
-  + Tone
-  + Style
-  + Dialogue
-  + Action
-  + Description
-  + Exposition
-  + Motivation
-  + Symbolism
-  + Climax
-  + Resolution
-  + Imagery
-  + Pacing
-  + Writing
-  + Author 
+Aspect extraction was done using KeyBERT and some custom wrangling methods. [KeyBERT](https://maartengr.github.io/KeyBERT/index.html) utilizes BERT embeddings to produce keywords/phrases that best represent a document. It is used in combination with KeyphraseCountVectorizer which is an enhanced version of the CountVectorizer which is designed to find key phrases using part-of-speech patterns and also takes care of stopwords. The part-of-speech patterns used are variants from the work of Banjar et al. (2020). It parses syntactic dependencies pulling out phrases such as adjective > noun or verb > noun. The model is fed a list of seed keywords which guide the model (if possible) towards phrases related to said list. The seed keywords are various words related to aspects of writing and books. The words used are:
++ Setting
++ Character
++ Plot
++ Conflict
++ Theme
++ Point-of-view
++ Tone
++ Style
++ Dialogue
++ Action
++ Description
++ Exposition
++ Motivation
++ Symbolism
++ Climax
++ Resolution
++ Imagery
++ Pacing
++ Writing
++ Author 
 + POS Patterns
   + Adjective > noun(s)
   + Adverb > adjective > noun(s)
   + Adverb > verb > noun(s)
   + Verb > noun(s)
-+ KeyphraseCountVectorizer
-  + KeyphraseCountVectorizer is an enhanced version of the CountVectorizer which is designed to find key phrases using part-of-speech patterns
-  + Stopwords
-+ KeyBERT model
-  + KeyBERT utilizes BERT embeddings to produce keywords/phrases that best represent a document
-  + https://maartengr.github.io/KeyBERT/index.html
-  + distilbert-base-nli-mean-tokens
+
 + Ended up with matched lists of nouns and their descriptive words
 ## Guided Topic Modeling
 + Guided topic modeling for seed keywords using BERTopic
