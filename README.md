@@ -3,12 +3,12 @@
 ## Objective
 The purpose of this project is to give additional insights about recommended books to a user utilizing topic modeling, aspect extraction, and sentiment analysis. It is intended to be an extension of a previous project that provides book recommendations with neural networks which can be found at [this repository](https://github.com/DarrellS0352/Neural-Collaborative-Filtering-Book-Recommendation-System).
 
-<img src="https://github.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/blob/main/img/topic%20sentiment%20review%20example.png" width=35% height=35%>
+<img src="https://github.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/blob/main/img/topic%20sentiment%20review%20example.png" width=35% height=35% align='center'>
 
 ## The Data
 The data used is Amazon product review data gathered by Ni et al. (2019). There is raw review data, ratings only data, data subsets for products that have at least five reviews, and per-category data available for each product category. The raw data has book metadata (2,935,525 books) and the book review data (51,311,621 reviews). The two datasets are joined on the book ID to add book titles to the reviews. To meet computing constraints, the data is then filtered to the top 10 genres with the most unique books and books that have 50 or more reviews. The final dataset is approximately 13 million reviews for 64,000 books and 5.3 million users. For development and presentation considerations, the data was filtered to a single book with 1,539 reviews.
 
-<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/genre%20freqs.PNG" width=35% height=35%>
+<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/genre%20freqs.PNG" width=35% height=35% align='center'>
 
 ### Data Pre-processing
 The raw review texts were pre-processed with the following methods:
