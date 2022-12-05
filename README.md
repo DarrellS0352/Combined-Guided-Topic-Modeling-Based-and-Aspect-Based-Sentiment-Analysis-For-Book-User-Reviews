@@ -3,7 +3,7 @@
 ## Objective
 abc
 + The purpose of this project is to give additional insights about recommended books to a user utilizing topic modeling, aspect extraction, and sentiment analysis
-+ Link to previous project
++ It is intended to be an extension of a previous project that provides book recommendations with neural networks which can be found at [this repository](https://github.com/DarrellS0352/Neural-Collaborative-Filtering-Book-Recommendation-System)
 + Most product recommenders give their recommendations and some even let you see user reviews
 + However, determining if you'll really like the product with these data points is unfeasible
 + You could read through thousands of user reviews 
