@@ -4,7 +4,7 @@
 The purpose of this project is to give additional insights about recommended books to a user utilizing topic modeling, aspect extraction, and sentiment analysis. It is intended to be an extension of a previous project that provides book recommendations with neural networks which can be found at [this repository](https://github.com/DarrellS0352/Neural-Collaborative-Filtering-Book-Recommendation-System).
 
 <p align="center">
- <img src="https://github.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/blob/main/img/topic%20sentiment%20review%20example.png" width=35% height=35%> <img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/process%20flow.PNG" width=75% height=75%>
+ <img src="https://github.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/blob/main/img/topic%20sentiment%20review%20example.png" width=35% height=35%> <img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/process%20flow.PNG" width=90% height=90%>
  </p>
  
 ## The Data
