@@ -27,14 +27,14 @@ The raw review texts were pre-processed with the following methods:
 Aspect extraction was done using KeyBERT and some custom wrangling methods. [KeyBERT](https://maartengr.github.io/KeyBERT/index.html) utilizes BERT embeddings to produce keywords/phrases that best represent a document. It is used in combination with KeyphraseCountVectorizer which is an enhanced version of the CountVectorizer and is designed to find key phrases using part-of-speech patterns and also takes care of stopwords. The part-of-speech patterns used are variants from the work of Banjar et al. (2020). It parses syntactic dependencies pulling out phrases such as adjective > noun or verb > noun. The model is fed a list of seed keywords which guide the model (if possible) towards phrases related to said list. The seed keywords are various words related to aspects of writing and books. The words used are setting, character, plot, conflict, theme, point-of-view, tone, style, dialogue, action, description, exposition, motivation, symbolism, climax, resolution, imagery, pacing, writing, and author. The output is matched lists of nouns and their descriptive words.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/aspect%20DF.PNG" width=35% height=35%>
+<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/aspect%20DF.PNG" width=30% height=30%>
  </p>
 
 ## Guided Topic Modeling
 A [sentence transformer embedding model](https://huggingface.co/sentence-transformers) is used to create numerical representations of the cleaned sentences. The sentence embeddings are then given to the topic model. The topic modeling is done with [BERTopic](https://maartengr.github.io/BERTopic/index.html). The guided topic modeling functionality is utilized by also feeding the list of seed keywords to this model. This determines the high-level topics written about in the reviews using transformers and class-based term frequency inverse document frequency (TF-IDF) to create dense topic clusters. Each topic produced consists of the top four keywords of the topic concatenated with underscores (ex: windows_drive_dos_file). The topics are assigned a topic number with -1 being outliers that don't fit with others well enough.
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/topic%20DF.PNG" width=35% height=35%>
+<img src="https://raw.githubusercontent.com/DarrellS0352/Combined-Guided-Topic-Modeling-Based-and-Aspect-Based-Sentiment-Analysis-For-Book-User-Reviews/main/img/topic%20DF.PNG" width=50% height=50%>
  </p>
 
 ## Sentiment Analysis
