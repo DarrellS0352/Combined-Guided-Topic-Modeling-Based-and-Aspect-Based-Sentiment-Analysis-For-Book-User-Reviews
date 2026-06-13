@@ -1,0 +1,35 @@
+# Core NLP
+spacy==3.4.1
+nltk==3.7
+
+# Embeddings & sentiment model
+torch==1.13.0
+transformers==4.24.0
+sentence-transformers==2.2.2
+
+# Topic modeling & keyphrase extraction
+bertopic==0.12.0
+keybert==0.7.0
+keyphrase-vectorizers==0.0.11
+umap-learn==0.5.3
+hdbscan==0.8.29
+
+# Text cleaning
+contractions==0.1.73
+unidecode==1.3.6
+beautifulsoup4==4.11.1
+
+# Data & viz
+pandas==1.5.1
+numpy==1.23.4
+matplotlib==3.6.2
+seaborn==0.12.1
+scikit-learn==1.1.3
+tqdm==4.64.1
+
+# After installing spacy, download the language model separately:
+# python -m spacy download en_core_web_sm
+#
+# Note: bertopic and keyphrase-vectorizers were both young, fast-moving
+# packages in late 2022 - versions above are best estimates for the date
+# and may need minor adjustment if you re-run this notebook.
